@@ -467,6 +467,8 @@ input::-webkit-input-placeholder {
 
 /* end products */
 
+/* start manufacture */
+
 .manufactures-carts {
     display: flex;
     justify-content: space-between;
@@ -483,3 +485,66 @@ input::-webkit-input-placeholder {
     height: 145px;
     margin-bottom: 20px;
 }
+
+/* end manufacture */
+
+/* start service */
+
+.service {
+    background-color: #f4f8fa;
+    padding-top: 65px;
+    padding-bottom: 100px;
+}
+
+.service__wrap {
+    margin-bottom: 75px;
+}
+
+.service__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.service__desc {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+}
+
+.service__body {
+    display: flex;
+}
+
+.service__list {
+    min-width: 240px;
+    margin-right: 60px;
+}
+
+.service__item {
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    padding-left: 22px;
+    background-color: #32425c;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.service__item:not(:last-child) {
+    border-bottom: 1px solid #4d627b;
+}
+
+.service__item > .active {
+    background-color: #fff;
+    color: #32425c;
+}
+
+
+
+
+/* end service */
+
+
+
+
