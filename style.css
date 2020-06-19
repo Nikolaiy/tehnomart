@@ -15,7 +15,9 @@ body {
 }
 
 .container {
-    max-width: 940px;
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0 auto;
 }
 
@@ -23,86 +25,151 @@ body {
 
 .header-top {
     background-color: #293449;
-    color: #ffffff;
-    height: 42px;
 }
 
 .header-top__menu {
     display: flex;
+    /* justify-content: space-between; */
     align-items: center;
+    height: 42px;
+    color: #ffffff;
 }
 
-.header-top__logo {
-    text-align: center;
+.logo {
+    text-transform: uppercase;
+    font-size: 24px;
     padding-right: 55px;
     padding-left: 55px;
     position: relative;
     z-index: 1;
 }
 
-.header-top__logo:before {
-    content: '';
+.logo:after {
+    content: "";
     position: absolute;
     top: -10px;
     left: 0;
+    width: 100%;
+    height: 42px;
     background-color: #ee3643;
     border-bottom: 5px solid #b52933;
-    height: 42px;
-    width: 100%;
     z-index: -1;
+    transition: background-color .2s linear;
 }
 
-.logo {
-    text-transform: uppercase;
-    font-size: 20px;
+.logo:hover:after {
+    background-color: #ca2c37;
+    border-bottom: 5px solid #9a212a;
 }
 
-.header-top__group {
-    flex-grow: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 30px;
+.logo:active:after {
+    background-color: #ba2732;
+    border-bottom: 5px solid #8e1e26;
 }
 
-.header-top__info {
-    display: flex;
-}
-
-.header-top__info .fa,
-.search .fa {
-    margin-right: 10px;
-    color: #6a7180;
+.search {
+    flex-grow: 1;
+    position: relative;
 }
 
 .search input {
     background-color: transparent;
+    position: relative;
+    height: 42px;
+    width: 100%;
     border: none;
     outline: none;
     color: #fff;
+    padding-left: 50px;
+    transition: all .1s linear;
+    z-index: 1;
 }
 
 input::-webkit-input-placeholder {
     color: #fff;
-    font-size: 15px;
+    font-size: 17px;
 } 
 
 .bookmarks {
-    margin-right: 45px;
+    display: block;
     font-size: 16px;
+    padding: 12px 30px 12px 40px;
+    position: relative;
 }
 
 .basket {
+    display: block;
     font-size: 16px;
+    padding: 12px 40px 12px 40px;
+    position: relative;
 }
 
-.header-top__order {
+.bookmarks:before,
+.basket:before,
+.search:before {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    opacity: .3;
+    transition: opacity .2s linear;
+}
+
+.basket:before {
+    background-image: url(./img/svg/icon-cart.svg);
+}
+
+.search:before {
+    background-image: url(./img/svg/icon-search.svg);
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.bookmarks:before {
+    background-image: url(./img/svg/icon-bookmark.svg);
+}
+
+.basket:hover::before,
+.search:hover::before,
+.bookmarks:hover::before {
+    opacity: 1;
+}
+
+.search input:focus {
+    background-color: #fff;
+    color: #000000;
+    font-size: 17px;
+
+}
+
+.basket:active,
+.bookmarks:active {
+    background-color: #161d29;
+    opacity: .5;
+}
+
+.checkout {
+    min-width: 150px;
+    text-align: center;
     background-color: #63a63e;
-    padding-right: 20px;
-    padding-left: 20px;
-    height: 42px;
-    padding-top: 10px;
+    padding: 12px 20px;
+    display: block;
+    transition: background-color .2s linear;
+}
+
+.checkout:hover {
+    background-color: #5fbb2d;
+}
+
+.checkout:active {
+    background-color: #518534;
+    color: #aac39b;
 }
 
 /* end header top */
@@ -506,6 +573,12 @@ input::-webkit-input-placeholder {
     margin-bottom: 35px;
 }
 
+.service__subtitle {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    width: 50%;
+}
+
 .service__desc {
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
@@ -538,6 +611,15 @@ input::-webkit-input-placeholder {
 .service__item > .active {
     background-color: #fff;
     color: #32425c;
+}
+
+.service__text {
+    max-width: 300px;
+}
+
+.service__promo {
+    display: flex;
+    min-width: 630px;
 }
 
 
