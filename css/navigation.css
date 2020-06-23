@@ -1,0 +1,137 @@
+.navigation {
+	width: 100%;
+	background: #f3f7f8;
+	padding-bottom: 60px;
+}
+
+.navigation-top {
+	display: flex;
+	padding: 45px 0;
+	font-family: 'Cuprum', sans-serif;
+}
+
+.navigation-top__desc {
+	flex: 1 0 auto;
+	margin: 0 50px;
+	color: #ee434f;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.navigation-top__contact {
+	text-align: center;
+}
+
+.contact__phone {
+	margin: 0 50px 5px 20px;
+	color: #ee434f;
+	font-size: 21px;
+	border: 3px solid #fff;
+	padding: 10px 50px 10px 70px;
+	position: relative;
+}
+
+.contact__phone:before {
+	content: "";
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	background-image: url(../img/svg/icon-phone.svg);
+	background-repeat: no-repeat;
+}
+
+.contact__address {
+	margin: 0;
+	color: #32425c;
+}
+
+ul.navigation-top__reg {
+	display: flex;
+	margin: 10px 0 0 20px;
+	padding: 0;
+	align-items: flex-start;
+}
+
+.btn a {
+	color: #000000;
+	font-size: 21px;
+	padding: 10px 25px 10px 25px;
+	background-color: #fff;
+	list-style: none;
+	transition: all .2s linear;
+}
+
+.btn_icon a {
+	padding-left: 40px;
+	margin-right: 10px;
+}
+
+.btn_icon {
+	position: relative;
+}
+
+.btn a:hover {
+	color: #ee3643;
+}
+
+.btn a:active {
+	color: #c5c5c5;
+}
+
+.btn_icon:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-40%);
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/svg/icon-login.svg);
+	background-repeat: no-repeat;
+	transition: all .2s linear;
+}
+
+.btn_icon:hover::before {
+	background-image: url(../img/svg/icon-login-blue.svg);
+}
+
+.btn_icon:active::before {
+	background-image: url(../img/svg/icon-login.svg);
+}
+
+.header-menu {
+	background-color: #32425c;
+	border-bottom: 5px solid #293449;
+
+}
+
+.header-menu__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+
+.header-menu__list {
+	list-style: none;
+}
+
+a.header-menu__link {
+	display: block;
+	padding: 15px 30px 20px;
+	font-size: 17px;
+	transition: all .2s linear;
+}
+
+a.header-menu__link:hover {
+	background-color: #293449;
+}
+
+a.header-menu__link:active {
+	background-color: #1d2739;
+	color: #8e939c;
+}
