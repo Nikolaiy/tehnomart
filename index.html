@@ -62,15 +62,15 @@
 					</li>
 				</ul>
 			</section>
-			<nav class="header-menu">
-				<ul class="header-menu__item">
-					<li class="header-menu__list"><a class="header-menu__link" href="#">Главная</a></li>
-					<li class="header-menu__list"><a class="header-menu__link" href="#">Компания</a></li>
-					<li class="header-menu__list"><a class="header-menu__link" href="#">Каталог</a></li>
-					<li class="header-menu__list"><a class="header-menu__link" href="#">Новости</a></li>
-					<li class="header-menu__list"><a class="header-menu__link" href="#">Спецпредложение</a></li>
-					<li class="header-menu__list"><a class="header-menu__link" href="#">Доставка</a></li>
-					<li class="header-menu__list"><a class="header-menu__link" href="#">Контакты</a></li>
+			<nav class="header-menu menu">
+				<ul class="header-menu__list menu-list">
+					<li class="header-menu__item menu-item"><a class="header-menu__link" href="#">Главная</a></li>
+					<li class="header-menu__item menu-item"><a class="header-menu__link" href="#">Компания</a></li>
+					<li class="header-menu__item menu-item"><a class="header-menu__link" href="#">Каталог</a></li>
+					<li class="header-menu__item menu-item"><a class="header-menu__link" href="#">Новости</a></li>
+					<li class="header-menu__item menu-item"><a class="header-menu__link" href="#">Спецпредложение</a></li>
+					<li class="header-menu__item menu-item"><a class="header-menu__link" href="#">Доставка</a></li>
+					<li class="header-menu__item menu-item"><a class="header-menu__link" href="#">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -229,7 +229,7 @@
 			<div class="service__body">
 				<ul class="service__list">
 					<li class="service__item">
-						<a href="">Доставка</a>
+						<a href="" class="active">Доставка</a>
 					</li>
 					<li class="service__item">
 						<a href="">Гарантия</a>
@@ -280,12 +280,65 @@
 					</p>
 					<img src="img/karta.jpg" alt="" class="company-contact__kart">
 					<p class="company-contact__btn btn-red">
-						<a href="">Заблудились? Напишите</a>
+						<a href="">Заблудились? Напишите нам</a>
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<footer class="footer">
+		<section class="footer-navigation">
+			<div class="container">
+				<div class="footer-navigation__top">
+					<a href="#" class="footer-navigation__logo header__logo">Техномарт</a>
+					<nav class="footer-navigation__menu menu">
+						<ul class="footer-navigation__list menu-list">
+							<li class="footer-navigation__item"><a href="#">Компания</a></li>
+							<li class="footer-navigation__item"><a href="#">Каталог</a></li>
+							<li class="footer-navigation__item"><a href="#">Новости</a></li>
+							<li class="footer-navigation__item"><a href="#">Доставка</a></li>
+							<li class="footer-navigation__item"><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-navigation__bottom">
+					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7 (812) 555-05-55</p>
+					<nav class="footer-navigation__menu menu">
+						<ul class="footer-navigation__list menu-list">
+							<li class="footer-navigation__item"><a href="#" class="footer-navigation__link-color">Материалы</a></li>
+							<li class="footer-navigation__item"><a href="#" class="footer-navigation__link-color">Техника</a></li>
+							<li class="footer-navigation__item"><a href="#" class="footer-navigation__link-color">Инструмент</a></li>
+							<li class="footer-navigation__item"><a href="#" class="footer-navigation__link-color">Спецпредложение</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
+		<section class="footer-copyraite">
+			<div class="container">
+				<div class="footer-copyraite__body">
+					<p class="footer-copyraite__text">
+						© 2010–2017 Компания «Техномарт» <br> Все права защищены
+					</p>
+					<ul class="footer-copyraite__social-list">
+						<li class="footer-copyraite__social-item"><a href="" class="visibility-hidden">В контакте</a></li>
+						<li class="footer-copyraite__social-item"><a href="" class="visibility-hidden">Фейсбук</a></li>
+						<li class="footer-copyraite__social-item"><a href="" class="visibility-hidden">Инстаграм</a></li>
+					</ul>
+					<p class="footer-copyraite__call">
+						Обратная связь:
+						<a href="#">mail@htmlacademy.ru</a>
+					</p>
+					<p class="footer-copyraite__build">
+						Разработано
+						<a href="#">htmlacademy.ru</a>
+					</p>
+				</div>
+			</div>
+		</section>
+	</footer>
 
 	<script src="js/script.js"></script>
 </body>

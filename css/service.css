@@ -33,6 +33,17 @@ li.service__item:not(:last-child) {
 	font-size: 21px;
 	font-weight: bold;
 	box-sizing: border-box;
+	transition: all .2s ease-in-out;
+}
+
+.service__item a:hover {
+	background-color: #293449;
+	color: #ffffff;
+}
+
+.service__item .active {
+	background-color: #ffffff;
+	color: #293449;
 }
 
 .service__info {

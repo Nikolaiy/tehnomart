@@ -102,13 +102,13 @@ ul.navigation-top__reg {
 	background-image: url(../img/svg/icon-login.svg);
 }
 
-.header-menu {
+.menu {
 	background-color: #32425c;
 	border-bottom: 5px solid #293449;
 
 }
 
-.header-menu__item {
+.menu-list {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -116,22 +116,22 @@ ul.navigation-top__reg {
 	margin: 0;
 }
 
-.header-menu__list {
+.menu-item {
 	list-style: none;
 }
 
-a.header-menu__link {
+.menu-item a {
 	display: block;
-	padding: 15px 30px 20px;
+	padding: 15px 28px 20px;
 	font-size: 17px;
 	transition: all .2s linear;
 }
 
-a.header-menu__link:hover {
+.menu-item a:hover {
 	background-color: #293449;
 }
 
-a.header-menu__link:active {
+.menu-item a:active {
 	background-color: #1d2739;
 	color: #8e939c;
 }
