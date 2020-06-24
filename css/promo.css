@@ -29,46 +29,56 @@ ul.promo__item_row {
 	margin-left: 0;
 }
 
-.promo__list_yellow {
-	background-color: #ffbf47;
-}
-
-.promo__list_yellow img {
+.promo__list img {
 	position: absolute;
 	top: 30%;
 	right: 40px;
 }
 
-.promo__list_yellow a {
-	background-color: #e5ac40;
+p.promo__list_btn {
+	margin: 0;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+.promo__list_btn:before {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: #000000;
+	height: 40px;
+	opacity: .1;
+	border-radius: 3px;
+	z-index: -1;
+	transition: all .2s linear;
+}
+
+.promo__list_btn:hover::before {
+	opacity: .2;
+}
+
+.promo__list_btn:active::before {
+	opacity: .3;
+}
+
+.promo__list_yellow {
+	background-color: #ffbf47;
 }
 
 .promo__list_blue {
 	background-color: #3bbce3;
 }
 
-.promo__list_blue img {
-	position: absolute;
-	top: 30%;
-	right: 40px;
-}
-
-.promo__list_blue a {
-	background-color: #35a9cc;
-}
-
 .promo__list_pinck {
 	background-color: #dc91d8;
 }
 
-.promo__list_pinck img {
-	position: absolute;
-	top: 30%;
-	right: 40px;
-}
-
-.promo__list_pinck a {
-	background-color: #c682c2;
+.promo__list_green {
+	background-color: #8ed78f;
 }
 
 .promo__list_title {
@@ -79,18 +89,42 @@ ul.promo__item_row {
 }
 
 .promo__list_btn a {
+	display: block;
 	font-family: 'Cuprum', sans-serif;
 	text-transform: uppercase;
-	padding: 10px 14px 14px 20px;
-	border-radius: 3px;
+	padding: 8px 0;
+	width: 100%;
 }
 
 .slaider {
 	position: absolute;
-	min-width: 620px;
+	max-width: 620px;
 	width: 100%;
 	background: url(../img/slider-1.jpg) no-repeat;
 	padding: 20px 0 23px 25px;
+}
+
+.slaider:after,
+.slaider:before {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 45px;
+	top: 53%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.slaider:after {
+	background-image: url(../img/svg/icon-left.svg);
+	background-repeat: no-repeat;
+	left: 22px;
+}
+
+.slaider:before {
+	background-image: url(../img/svg/icon-right.svg);
+	background-repeat: no-repeat;
+	right: 45px;
 }
 
 h2.slaider__title {
