@@ -10,7 +10,7 @@
 	align-items: flex-end;
 }
 
-.footer-navigation__logo {
+a.footer-navigation__logo {
 	padding: 15px 40px 15px;
 }
 
@@ -48,11 +48,11 @@ a.footer-navigation__link-color {
 	color: #d4b275;
 }
 
-.footer-navigation__item a:hover {
+.footer-navigation__item a[href]:hover {
 	text-decoration: underline;
 }
 
-.footer-navigation__item a:active {
+.footer-navigation__item a[href]:active {
 	opacity: .5;
 }
 

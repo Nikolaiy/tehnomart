@@ -129,11 +129,11 @@ ul.navigation-top__reg {
 	transition: all .2s linear;
 }
 
-.menu-item a:hover {
+.menu-item a[href]:hover {
 	background-color: #293449;
 }
 
-.menu-item a:active {
+.menu-item a[href]:active {
 	background-color: #1d2739;
 	color: #8e939c;
 }

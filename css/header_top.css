@@ -12,7 +12,7 @@
 	font-size: 17px;
 }
 
-.header__logo {
+a.header__logo {
 	position: relative;
 	background-color: #ee3643;
 	padding: 5px 55px 5px;
@@ -21,7 +21,7 @@
 	transition: all .2s ease-in-out;
 }
 
-.header__logo:before {
+a.header__logo:before {
 	content: "";
 	height: 5px;
 	background: #b52933;
@@ -31,19 +31,19 @@
 	right: 0;
 }
 
-.header__logo:hover {
+a[href].header__logo:hover {
 	background-color: #ca2c37;
 }
 
-.header__logo:hover:before {
+a[href].header__logo:hover:before {
 	background-color: #9a212a;
 }
 
-.header__logo:active {
+a[href].header__logo:active {
 	background-color: #ba2732;
 }
 
-.header__logo:active:before {
+a[href].header__logo:active:before {
 	background-color: #8e1e26;
 }
 
