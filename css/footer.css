@@ -1,3 +1,5 @@
+/* start footer */
+
 .footer-navigation {
 	background-color: #32425c;
 }
@@ -20,7 +22,6 @@
 
 .menu {
 	border-bottom: none;
-
 }
 
 .footer-navigation__list {
@@ -49,6 +50,10 @@ a.footer-navigation__link-color {
 
 .footer-navigation__item a:hover {
 	text-decoration: underline;
+}
+
+.footer-navigation__item a:active {
+	opacity: .5;
 }
 
 .footer-navigation__bottom {
@@ -118,3 +123,10 @@ a.footer-navigation__link-color {
 .footer-copyraite__build a:hover {
 	text-decoration: underline;
 }
+
+.footer-copyraite__call a:active,
+.footer-copyraite__build a:active {
+	opacity: .5;
+}
+
+/* end footer */

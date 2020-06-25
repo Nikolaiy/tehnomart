@@ -1,3 +1,5 @@
+/* start global */
+
 body {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
@@ -6,8 +8,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
-/* font-family: 'Cuprum', sans-serif; */
 
 .container {
 	max-width: 940px;
@@ -53,7 +53,7 @@ p.btn-red {
 .new:before {
 	content: "new";
 	position: absolute;
-	top: 5px;
+	top: 4px;
 	right: -20px;
 	width: 75px;
 	height: 25px;
@@ -61,6 +61,7 @@ p.btn-red {
 	transform: rotate(45deg);
 	text-align: center;
 	padding-top: 2px;
+	z-index: 10;
 }
 
 h2.popular-title {
@@ -86,3 +87,5 @@ h2.title {
 	color: #000000;
 	margin: 0;
 }
+
+/* end global */

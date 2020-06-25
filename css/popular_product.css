@@ -1,3 +1,5 @@
+/* start popular product */
+
 .wrap {
 	background-color: #f9f5f0;
 	padding: 25px 25px 23px 30px;
@@ -27,17 +29,33 @@ ul.product-items {
 	border: 1px solid #a9a9a9;
 	padding: 0 0 20px 0;
 	list-style: none;
+	position: relative;
+	transition: all .2s linear;
+}
+
+.product-list:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .product-list:last-child {
 	margin-right: 0;
 }
 
+.product-list img {
+	position: absolute;
+	z-index: 2;
+	transition: all .2s linear;
+}
+
+.product-list:hover img {
+	opacity: 0;
+}
+
 h3.product__title {
 	font-weight: bold;
 	font-size: 18px;
 	color: #000000;
-	margin: 0;
+	margin: 175px 0 0 0;
 }
 
 p.product__price_old {
@@ -50,5 +68,94 @@ p.product__price_old {
 	font-family: "PT Sans", sans-serif;
 	font-size: 17px;
 	font-weight: bold;
-	padding: 10px 35px 10px 35px;
+	padding: 10px 50px 10px 50px;
+	background: url(../img/svg/red-button.svg) no-repeat 20px;
 }
+
+.product__btn-group {
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+	font-family: 'Cuprum', sans-serif;
+	padding: 40px 20px 35px 20px;
+	max-width: 135px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: all .2s linear;
+}
+
+.product-list:hover .product__btn-group {
+	opacity: 1;
+	z-index: 2;
+}
+
+.product__btn-group p {
+	margin: 0 0 15px 0;
+}
+
+.product__btn-group {}
+
+.product__btn-bay a {
+	display: block;
+	width: 100%;
+	background-color: #63a63e;
+	border-radius: 3px;
+	border-bottom: 3px solid #367315;
+	padding: 10px 0;
+	transition: all .2s linear;
+}
+
+.product__btn-bay {
+	position: relative;
+}
+
+.product__btn-bay:before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 15px;
+	background: url(../img/svg/icon-cart.svg) no-repeat;
+	opacity: .5;
+	transition: all .2s linear;
+}
+
+.product__btn-bay:hover::before {
+	opacity: 1;
+}
+
+.product__btn-bay:hover a {
+	background-color: #5fbb2d;
+}
+
+.product__btn-bay:active a {
+	background-color: #518534;
+	border-bottom-color: #518534;
+}
+
+.product__btn-bookmark a {
+	display: block;
+	width: 100%;
+	border: 3px solid #63a63e;
+	border-radius: 3px;
+	color: #32425c;
+	padding: 10px 0;
+	box-sizing: border-box;
+	transition: all .2s linear;
+}
+
+.product__btn-bookmark:hover a {
+	border: 3px solid #32425c;
+}
+
+.product__btn-bookmark:active a {
+	opacity: .3;
+}
+
+/* end popular product */

@@ -1,3 +1,5 @@
+/* end service */
+
 .service {
 	background-color: #f4f8f9;
 }
@@ -70,3 +72,5 @@ li.service__item:not(:last-child) {
 	top: 0;
 	right: 0;
 }
+
+/* end service */
