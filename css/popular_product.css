@@ -11,9 +11,10 @@
 
 ul.product-items {
 	padding: 0;
-	margin: 0 0 20px 0;
+	margin: 0;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	box-sizing: border-box;
 }
 
@@ -25,19 +26,20 @@ ul.product-items {
 	text-align: center;
 	max-width: 220px;
 	width: 100%;
-	margin-right: 20px;
+	margin: 0 20px 20px 0;
 	border: 1px solid #a9a9a9;
 	padding: 0 0 20px 0;
 	list-style: none;
 	position: relative;
 	transition: all .2s linear;
+	box-sizing: border-box;
 }
 
 .product-list:hover {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.product-list:last-child {
+.popular-product .product-list:last-child {
 	margin-right: 0;
 }
 
