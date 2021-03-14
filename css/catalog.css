@@ -21,27 +21,53 @@
 	margin: 0 20px 0 0;
 }
 
-.catalog-content {}
+.catalog-content {
+}
 
 .catalog-content .product-list:nth-child(3n + 3) {
 	margin-right: 0;
 }
 
+.filter__title {
+	margin: 0;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: "PT Sans", sans-serif;
+	color: #000000;
+	padding: 10px 15px 10px 20px;
+	background-color: #f7f3ec;
+}
 
+.catalog-content__title {
+	flex: 1 0 auto;
+}
 
+.catalog-content__sort {
+	display: flex;
+	align-items: center;
+	background-color: #f7f3ec;
+	margin: 0 0 20px 0;
+	padding: 0 15px 0 0;
+}
 
+.catalog-content__btn {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: "PT Sans", sans-serif;
+	padding: 0;
+	border: 0;
+	margin: 0 40px 0 0;
+	position: relative;
+}
 
-
-
-
-
-
-
-
+.catalog-content__btn-group img {
+	color: #ee3643;
+}
 
 /* start pagination */
 
-.catalog-content__pagination {}
+.catalog-content__pagination {
+}
 
 .catalog-content__list {
 	padding: 0;
